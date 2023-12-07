@@ -51,5 +51,7 @@ export function getCitationFilePath(citation: string): string {
     }
     console.log('storage account:' + storage_account);
 
-    return `https://${storage_account}.blob.core.windows.net/documents/${citation}`;
+    // return `https://${storage_account}.blob.core.windows.net/documents/${citation}`;
+    return `https://${storage_account}.blob.core.windows.net/attachments/${citation}`;
+
 }
